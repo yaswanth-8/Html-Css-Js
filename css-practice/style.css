@@ -1,0 +1,72 @@
+/* div{
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background: red;
+    color: white;
+    transform: translateY(100px);
+    border: 1px solid black;
+    box-shadow: 10px 10px rgb(85, 84, 84,0.8);
+} */
+
+.div-1{
+    transform:translateY(100px) translateX(10px) skewY(10deg);
+    background: blue;
+    color: white;
+}
+
+.div-2{
+    transform:translateY(100px) translateX(50px) skewX(20deg) rotateY(10deg) translateY(-10px);
+    background: rgb(15, 214, 75);
+    color: white;
+}
+
+.div-3 {
+    background: rgb(229, 255, 0);
+    color: rgb(15, 5, 5);
+    transform: matrix(1, 0.5, -0.5,1,100,100);
+}
+
+.div-4 {
+    position: absolute;
+    background: rgb(253, 133, 213);
+    color: rgb(15, 5, 5);
+    transform:translateY(100px) translateX(180px) scale(1.2);
+    word-break:keep-all;
+}
+
+/*Animations-Practice*/
+/* 
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: fade 2s infinite;
+  }
+
+  @keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  } */
+
+  .parent{
+    background-color: hsla(200, 100%, 20%);
+    height: 400px;
+    width: 400px;
+  }
+
+  .child{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+  }
+
+  .parent:hover .child{
+    animation: move 1s ease-in;
+  }
+
+  @keyframes move{
+        
+  }
