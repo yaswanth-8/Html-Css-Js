@@ -1,0 +1,62 @@
+body{
+    background-image: url('https://www.sky247.net/wp-content/uploads/2023/04/Hardik-Pandya-758x460.jpg');
+    background-size: cover;
+}
+.carousel {
+    overflow: hidden;
+    width: 880px;
+    animation: slideImage 4s ease-in-out infinite;
+    margin-bottom: 30px;  
+  }
+  
+  .carousel img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  @keyframes slideImage {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(940px);
+      }
+    100% {
+        transform: translateX(0px);
+    }
+  }
+  
+  .container{ 
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding:20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    background-color: rgb(14, 5, 94,0.3);
+    border-radius: 20px;
+  }
+
+  .container img{
+    height: 250px;
+    width: 250px;
+  }
+
+  .first{
+    grid-row-start: 1;
+    grid-row-end:3;
+  }
+
+  .first img{
+    height: 100%;
+  }
+  img{
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
