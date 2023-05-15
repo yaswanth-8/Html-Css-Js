@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  padding: 80px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://media.istockphoto.com/id/1006024178/vector/business-and-education-ornament-seamless-pattern-vector-illustration.jpg?s=612x612&w=0&k=20&c=_t5LymstVISBPyPL5L57ELPJ-4K9JAOQ9kDPRSRX-uM=    ');
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+
+        .container{
+            background-color:rgb(240, 248, 255,0.7);
+            border-radius: 20px;
+            padding: 80px;
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            padding: 5px;
+            font-size: 16px;
+            margin: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+    </style>
+    <script>
+        function Sum() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var sum = num1 + num2;
+            document.getElementById('result').textContent = 'Sum: ' + sum;
+        }
+
+        function Diff() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var diff = num1 - num2;
+            document.getElementById('result').textContent = 'Difference: ' + diff;
+        }
+
+        function Multi() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var multi = num1 * num2;
+            document.getElementById('result').textContent = 'Product: ' + multi;
+        }
+
+        function Div() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var div = num1 / num2;
+            document.getElementById('result').textContent = 'Quotient: ' + div;
+        }
+
+        function Mod() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var mod = num1 % num2;
+            document.getElementById('result').textContent = 'Modulo: ' + mod;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2">
+        <br>
+        <button onclick="Sum()">+</button>
+        <button onclick="Diff()">-</button>
+        <button onclick="Multi()">x</button>
+        <button onclick="Div()">/</button>
+        <button onclick="Mod()">%</button>
+        <br>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>
