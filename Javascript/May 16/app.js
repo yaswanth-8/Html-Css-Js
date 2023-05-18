@@ -1,2 +1,5 @@
 let arr1 = [1,2,3,'yaswa'];
-console.log(arr1);
+
+for(let i of arr1){
+    console.log(i);
+}
